@@ -1,0 +1,20 @@
+﻿@page
+@model TweetCool.TweetsModel
+@{
+    ViewData["Title"] = "Tweets";
+}
+
+<h1>Tweets</h1>
+
+<ol>
+    @foreach (var tweets in TweetsModel.allTweets)
+    {
+        <li>
+            @tweets.poster;
+            @tweets.content;
+            @tweets.timeStamp;
+            @tweets.id;
+        </li>
+    }
+</ol>
+

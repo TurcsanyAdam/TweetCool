@@ -1,0 +1,35 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>TweetCool</title>
+</head>
+<body>
+    <div class="text-center">
+        <link href="~/css/index.css" rel="stylesheet">
+        <h1 class="display-4">Welcome to TweetCool</h1>
+        <p>Tweet with Codecoolers all around the globe!</p>
+    </div>
+    <div class = "pepe">
+        <img src="~/images/pepe.png"/>    
+    </div>
+    <div class ="form">
+        <form method="post">
+            <input type="text" name="poster" placeholder="Your Name" />
+            <input type="text" name="content" placeholder="Your Tweet" />
+            <button>Submit</button>
+            <br /> 
+            <br /> 
+            <br /> 
+        </form>
+        <form action="/Tweets" method="get">
+            <button>Check out all the recent tweets!</button>
+        </form>
+    </div>
+</body>
+    </html>
+
